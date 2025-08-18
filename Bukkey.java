@@ -1,4 +1,3 @@
-package confy.simpleplugin;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
@@ -179,4 +178,5 @@ public class Bukkey {
         }
         return result.toString() + ":" + pluginId;
     }
+
 }
