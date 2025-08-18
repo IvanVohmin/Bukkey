@@ -12,12 +12,13 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 public class Bukkey {
-
+    private final String prefix = "§x§E§F§E§F§E§F[§x§E§F§E§F§E§9B§x§F§0§E§F§E§3u§x§F§0§E§F§D§Dk§x§F§1§E§F§D§8k§x§F§1§E§F§D§2e§x§F§1§E§F§C§Cy§x§F§2§E§F§C§6.§x§F§2§E§F§C§0j§x§F§3§E§F§B§Aa§x§F§3§E§F§B§4v§x§F§3§E§F§A§Ea§x§F§4§E§F§A§9] §x§F§5§E§F§9§D-§x§F§5§E§F§9§7>";
+    // *-- Вы можете изменить prefix, остальные поля просим не трогать и не изменять! --*
+    
     private final String licenseKey;
     private final String pluginId;
     private final Plugin plugin;
     private String ip;
-    private final String prefix = "§x§E§F§E§F§E§F[§x§E§F§E§F§E§9B§x§F§0§E§F§E§3u§x§F§0§E§F§D§Dk§x§F§1§E§F§D§8k§x§F§1§E§F§D§2e§x§F§1§E§F§C§Cy§x§F§2§E§F§C§6.§x§F§2§E§F§C§0j§x§F§3§E§F§B§Aa§x§F§3§E§F§B§4v§x§F§3§E§F§A§Ea§x§F§4§E§F§A§9] §x§F§5§E§F§9§D-§x§F§5§E§F§9§7>";
 
     // *-- For fingerprints encryptions --*
     private static final char[] IP_ENCRYPT_MAP = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
@@ -164,7 +165,6 @@ public class Bukkey {
     }
 
     private String printFingerprint() {
-        if (ip == null || ip.isEmpty()) return "";
         StringBuilder result = new StringBuilder(ip.length());
         for (int i = 0; i < ip.length(); i++) {
             char c = ip.charAt(i);
@@ -180,3 +180,4 @@ public class Bukkey {
     }
 
 }
+
