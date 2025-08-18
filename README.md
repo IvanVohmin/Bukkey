@@ -1,4 +1,4 @@
-# 📖 Bukkey – License Key Managment for Bukkit Plugins  
+# 📖 Bukkey – License Key Management for Bukkit Plugins  
 
 ![Security](https://img.shields.io/badge/Security-Licensing-blue)  
 ![Bukkit](https://img.shields.io/badge/API-Bukkit%201.16.5-green)  
