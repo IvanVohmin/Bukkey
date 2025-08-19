@@ -51,8 +51,8 @@ Bukkey itself is not a full protection system. For maximum security, it is recom
 ---
 
 ### ⚡ Installation
-1. Download **the latest** relase from [Releases](../../releases).  
-2. Put `Bukkey.java` inside your Bukkit plugin's folder.  
+1. Download **the latest** relase from [Releases](../../releases) (ENG version).  
+2. Put `Bukkey-EN.java` inside your Bukkit plugin's folder.  
 3. In plugin's method `onEnable()` call:  
 
 ```java
