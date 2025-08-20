@@ -90,7 +90,7 @@ public class Bukkey {
                     this.ip, this.licenseKey, this.pluginId
             );
 
-            URL url = new URL("http://127.0.0.1:2366/check/key");
+            URL url = new URL("https://api.bukkey.ru/check/key");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setDoOutput(true);
@@ -180,4 +180,5 @@ public class Bukkey {
     }
 
 }
+
 
