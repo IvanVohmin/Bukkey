@@ -1,4 +1,4 @@
-# 📖 Bukkey – License Key Management for Bukkit Plugins  
+# ⚡ Bukkey – License Keys Management for Bukkit Plugins  
 
 ![Security](https://img.shields.io/badge/Security-Licensing-blue)  
 ![Bukkit](https://img.shields.io/badge/API-Bukkit%201.16.5-green)  
@@ -12,7 +12,7 @@
 ## 🇷🇺 Русская версия
 
 ### 🔒 Что такое Bukkey?
-Bukkey — это удобный класс для проверки лицензионных ключей Bukkit-плагинов.  
+Bukkey — это удобный сервис для управления лицензионными ключами для ваших Bukkit-плагинов.  
 Он взаимодействует с сервером лицензий и защищает ваш плагин от несанкционированного использования.  
 
 📌 **Важно:**  
@@ -45,7 +45,7 @@ public void onEnable() {
 ## 🇬🇧 English version
 
 ### 🔒 What is Bukkey?
-Bukkey is a lightweight class for validating license keys in Bukkit plugins.
+Bukkey is a convenient service for managing license keys for your Bukkit plugins.
 It communicates with your licensing server and prevents unauthorized usage of your plugin. 
 
 📌 **Note:**  
