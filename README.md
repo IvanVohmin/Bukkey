@@ -4,7 +4,8 @@
 ![Bukkit](https://img.shields.io/badge/API-Bukkit%201.16.5-green)  
 ![Lang](https://img.shields.io/badge/Languages-RU%20%7C%20EN-orange)  
 
-<img width="1471" height="871" alt="изображение" src="https://github.com/user-attachments/assets/267382e7-883c-470f-9a7e-1b877b24cee2" />
+<img width="1430" height="862" alt="изображение" src="https://github.com/user-attachments/assets/499b7c73-51c0-48e4-9de8-4bd6d182dccc" />
+
 
 ---
 
