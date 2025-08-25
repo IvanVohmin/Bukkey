@@ -62,6 +62,8 @@ public void onEnable() {
 1. ```licenseKey``` - это ваш лицензионный ключ из конфига
 2. ```YOUR_PLUGIN_ID``` - ID вашего плагина в панели управления на сайте
 
+👉 Исходный код: https://github.com/alexec0de/Bukkey/tree/main
+
 ☄️ Минимальная версия **Java** для запуска: **8**
 
 ## 🇬🇧 English version
@@ -116,5 +118,7 @@ Where:
 
 1. ```licenseKey``` - Your license key from a config.yml
 2. ```YOUR_PLUGIN_ID``` - Your plugin's ID in the control panel on the website
+
+👉 Source: https://github.com/alexec0de/Bukkey/tree/main
 
 ☄️ Minimal version of **Java** for launch: **8**
