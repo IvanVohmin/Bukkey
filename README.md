@@ -21,24 +21,46 @@ Bukkey не является полной защитой, а служит доп
 ---
 
 ### ⚡ Установка
-1. Скачайте **актуальный релиз** из раздела [Releases](../../releases).  
-2. Поместите файл `Bukkey.java` в папку вашего Bukkit-плагина.  
-3. В методе `onEnable()` вашего плагина вызовите:  
+1. Добавьте репозиторий и зависимость в плагин.
+
+```yml
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>                            
+```
+```yml
+<dependency>
+    <groupId>com.github.alexec0de</groupId>
+    <artifactId>Bukkey</artifactId>
+    <version>1.0.0</version>
+</dependency>                                                      
+```
+
+2. В методе `onEnable()` вашего плагина вызовите наш основной класс:  
 
 ```java
 @Override
 public void onEnable() {
-    String licenseKey = getConfig().getString("LICENSE_KEY"); 
-    boolean enableCheck = true; // включить/выключить проверку
+    // ...
+    saveDefaultConfig();
 
-    new Bukkey(this, licenseKey, "YOUR_PLUGIN_ID", enableCheck);
+    String licenseKey = getConfig().getString("LICENSE_KEY");
+
+    Bukkey bukkey = new Bukkey(licenseKey, "PLUGIN_ID", this.getLogger());
+
+    if (!bukkey.check()) {
+        // проверка не пройдена, можете к примеру выключить плагин
+        Bukkit.getPluginManager().disablePlugin(this);
+    }
+
+    // ...
 }
 ```
 Где:
 
 1. ```licenseKey``` - это ваш лицензионный ключ из конфига
-2. ```enableCheck``` - включить/выключить проверку ключа
-3. ```YOUR_PLUGIN_ID``` - ID вашего плагина в панели управления на сайте
+2. ```YOUR_PLUGIN_ID``` - ID вашего плагина в панели управления на сайте
 
 ☄️ Минимальная версия **Java** для запуска: **8**
 
@@ -54,23 +76,45 @@ Bukkey itself is not a full protection system. For maximum security, it is recom
 ---
 
 ### ⚡ Installation
-1. Download **the latest** relase from [Releases](../../releases) (ENG version).  
-2. Put `Bukkey-EN.java` inside your Bukkit plugin's folder.  
-3. In plugin's method `onEnable()` call:  
+1. Add a repo and a dependency in your plugin.
+
+```yml
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>                            
+```
+```yml
+<dependency>
+    <groupId>com.github.alexec0de</groupId>
+    <artifactId>Bukkey</artifactId>
+    <version>1.0.0</version>
+</dependency>                                                      
+```
+
+2. In `onEnable()` of your plugin call our main class:  
 
 ```java
 @Override
 public void onEnable() {
-    String licenseKey = getConfig().getString("LICENSE_KEY"); 
-    boolean enableCheck = true; // enable/disable license validation
+    // ...
+    saveDefaultConfig();
 
-    new Bukkey(this, licenseKey, "YOUR_PLUGIN_ID", enableCheck);
+    String licenseKey = getConfig().getString("LICENSE_KEY");
+
+    Bukkey bukkey = new Bukkey(licenseKey, "PLUGIN_ID", this.getLogger());
+
+    if (!bukkey.check()) {
+        // check has failed, you can disable the plugin, for example:
+        Bukkit.getPluginManager().disablePlugin(this);
+    }
+
+    // ...
 }
 ```
 Where:
 
-1. ```licenseKey``` - your license key from the config.yml
-2. ```enableCheck``` - enable/disable license validation
-3. ```YOUR_PLUGIN_ID``` - your plugin ID, available in the plugin management panel on the website.
+1. ```licenseKey``` - Your license key from a config.yml
+2. ```YOUR_PLUGIN_ID``` - Your plugin's ID in the control panel on the website
 
 ☄️ Minimal version of **Java** for launch: **8**
